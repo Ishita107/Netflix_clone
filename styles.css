@@ -7,3 +7,16 @@
 body {
     background-color: black;      /* adding background color black */
 }
+
+.navbar{
+    display : flex;
+}
+.navbaar_brand{
+    width: 100px;
+    height : 100%;
+}
+
+.navbaar_logo{
+    width: 100%;
+    height : 100%;
+}
