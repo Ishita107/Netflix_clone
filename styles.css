@@ -28,3 +28,13 @@ body {
     justify-content: right;
 
 }
+
+.language---Select{        /* removing default style of select*/
+    background : transparent;   /* transparent -- remove the background*/
+    border: none;               /* removes border*/
+    color:white;
+}
+
+.language---Select:focus{     /* pseudo focus class*/
+    outline: none;
+}
