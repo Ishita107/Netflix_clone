@@ -12,17 +12,41 @@ body {
 .navbar{
     display : flex;
     justify-content: space-between;
-    padding : 3% 3%;
+    position: absolute;             /* remain on top of other element*/
+    top :0;
+    width : 100% ;             /* occupy 100% width of screen*/
+    padding: 3% 3%;
+    z-index: 10;
 }
-.navbaar_brand{            /*style to netflix logo*/
-    width: 100px;
+.navbaar_brand{            /*style to netflix logo  adjusting size of div container*/
+    width: 100px;              
     height : 100%;
 }
 
-.navbaar_logo{
+.navbaar_logo{           /* image occupy 100% width and height of div of class navbaar_brand*/
     width: 100%;
     height : 100%;
 }
+
+.hero_main_bg{     
+    width:100%;
+    height : 75vh;              /* vh -- viewport height */
+}
+
+.hero_bg_img{   /* image occupy 100% width and height of div of class hero_main_bg */
+    width:100%;
+    height : 100%;
+    object-fit: cover;
+}
+
+.hero_bg_overlay{
+    position: absolute;
+    inset: 0;
+    width:100%;
+    height : 75vh;   
+    background: rgba(0, 0, 0, 0.4);
+}
+
 
 .nav-items{
     display:flex;                             /* changing display to flex for nav item*/
@@ -54,7 +78,12 @@ body {
 }
 /* adding media queries*/
 @media(min-width : 768px){        /*for mobile*/
-
+    .hero_main_bg{
+        height: 100vh;
+     }
+     .hero_bg_overlay{
+        height:100vh;
+     }
 }
 
 @media(min-width : 1024px){        /*for laptop*/
