@@ -7,6 +7,8 @@
 body {
     background-color: black;      /* adding background color black */
     color:white;
+    font-family: 'Caveat', cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar{
@@ -36,10 +38,10 @@ body {
 .hero_bg_img{   /* image occupy 100% width and height of div of class hero_main_bg */
     width:100%;
     height : 100%;
-    object-fit: cover;
+    object-fit: cover;           /* image does not sqeeze */
 }
 
-.hero_bg_overlay{
+.hero_bg_overlay{                          /* adding some shadow on background image */
     position: absolute;
     inset: 0;
     width:100%;
@@ -57,16 +59,23 @@ body {
     background : transparent;   /* transparent -- remove the background*/
     border: none;               /* removes border*/
     color:white;
+    font-size: 20px;
 }
 
 .language---Select:focus{     /* pseudo focus class*/
     outline: none;
 }
 
+option{
+    background-color: black;
+    color : white;
+}
+
 .dropDown{
     border: 1px solid white;
     border-radius: 2px;
     padding : 10px 6px;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .sign_in{                /* adding style to sign in button*/
@@ -76,7 +85,34 @@ body {
     color: white;
     padding: 11px 20px;
 }
+
+.hero_card{
+    position: absolute;
+    top:30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+}
+
+.hero_title{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.hero_description{
+    font-weight: 400;
+    font-size: 15px;
+}
 /* adding media queries*/
+
+@media(max-width : 768px){  
+    .hero_card{
+        top:50%;
+        left:50%;
+        transform: translate(-50% , -50%);
+     }
+}
 @media(min-width : 768px){        /*for mobile*/
     .hero_main_bg{
         height: 100vh;
@@ -84,6 +120,17 @@ body {
      .hero_bg_overlay{
         height:100vh;
      }
+     .hero_card{
+        top:50%;
+        left:30%;
+        transform: translate(-30% , -30%);
+     }
+     .hero_title{
+        font-size: 43px;
+    }
+    .hero_description{
+        font-size: 20px;
+    }
 }
 
 @media(min-width : 1024px){        /*for laptop*/
@@ -97,11 +144,22 @@ body {
         font-size: 20px;          /*sign in button*/
     }
     .dropDown{
-        font-size: 19px;          /* drop down menu*/
-        padding:11px 8px;
+        font-size: 20px;          /* drop down menu*/
+        padding:9px 20px;
     }
     .nav-items{
         gap:30px;
+    }
+    .hero_card{
+        top:50%;
+        left:50%;
+        transform: translate(-50% , -50%);
+     }
+     .hero_title{
+        font-size: 50px;
+    }
+    .hero_description{
+        font-size: 23px;
     }
 }
 
