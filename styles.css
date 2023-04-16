@@ -11,9 +11,9 @@ body {
 
 .navbar{
     display : flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.navbaar_brand{
+.navbaar_brand{            /*style to netflix logo*/
     width: 100px;
     height : 100%;
 }
@@ -25,8 +25,6 @@ body {
 
 .nav-items{
     display:flex;
-    justify-content: right;
-
 }
 
 .language---Select{        /* removing default style of select*/
@@ -37,4 +35,18 @@ body {
 
 .language---Select:focus{     /* pseudo focus class*/
     outline: none;
+}
+
+.dropDown{
+    border: 1px solid white;
+    border-radius: 2px;
+    padding : 10px 6px;
+}
+
+.sign_in{                /* adding style to sign in button*/
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    border-radius: 4px ;
+    color: white;
+    padding: 11px 20px;
 }
