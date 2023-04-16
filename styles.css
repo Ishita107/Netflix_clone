@@ -83,7 +83,7 @@ option{
     border: 1px solid #dc030f;
     border-radius: 4px ;
     color: white;
-    padding: 11px 20px;
+    padding: 13px 20px;
 }
 
 .hero_card{
@@ -104,11 +104,56 @@ option{
     font-weight: 400;
     font-size: 15px;
 }
+
+.email_input{                           /* removing default border and background of input  */
+    border: none;
+    background: transparent;
+    width:100%;
+    height:100%;
+    padding:13px;
+}
+
+.email_form_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email_container{
+    position:relative;
+    background-color: white;                /* white color to input div */
+    width :90%;                              /* changing width of div */
+    height : 50px;
+}
+
+.email_label{
+    color : rgb(153, 149, 149);
+    position : absolute;                         /* to place label in the center of input field -- looks like label*/
+    top :28%;
+    left:2%;
+    transition :0.5s;
+}
+
+.email_input:focus + .email_label{              /* When input is focussed style label also */
+    top: 0.1rem;
+    font-size: 10px;
+}
+
+.email_input:not(:placeholder-shown).email_input:not(:focus) + .email_label{
+    top: 0.1rem;
+    font-size: 10px;
+}
+
+.email_input:focus-visible{
+    outline: none;
+}
+
 /* adding media queries*/
 
 @media(max-width : 768px){  
     .hero_card{
-        top:50%;
+        top:30%;
         left:50%;
         transform: translate(-50% , -50%);
      }
@@ -121,9 +166,9 @@ option{
         height:100vh;
      }
      .hero_card{
-        top:50%;
-        left:30%;
-        transform: translate(-30% , -30%);
+        top:30%;
+        left:50%;
+        transform: translate(-50% , -50%);
      }
      .hero_title{
         font-size: 43px;
@@ -151,7 +196,7 @@ option{
         gap:30px;
     }
     .hero_card{
-        top:50%;
+        top:30%;
         left:50%;
         transform: translate(-50% , -50%);
      }
