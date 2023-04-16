@@ -12,6 +12,7 @@ body {
 .navbar{
     display : flex;
     justify-content: space-between;
+    padding : 3% 3%;
 }
 .navbaar_brand{            /*style to netflix logo*/
     width: 100px;
@@ -24,7 +25,8 @@ body {
 }
 
 .nav-items{
-    display:flex;
+    display:flex;                             /* changing display to flex for nav item*/
+    gap:14px;                                /*space between drop down and sign in button*/
 }
 
 .language---Select{        /* removing default style of select*/
@@ -49,4 +51,31 @@ body {
     border-radius: 4px ;
     color: white;
     padding: 11px 20px;
+}
+/* adding media queries*/
+@media(min-width : 768px){        /*for mobile*/
+
+}
+
+@media(min-width : 1024px){        /*for laptop*/
+    .navbar{
+        padding:2% 5%;                 
+    }
+    .navbaar_brand{ 
+        width:150px;             /* netfix - logo*/
+    }
+    .sign_in{
+        font-size: 20px;          /*sign in button*/
+    }
+    .dropDown{
+        font-size: 19px;          /* drop down menu*/
+        padding:11px 8px;
+    }
+    .nav-items{
+        gap:30px;
+    }
+}
+
+@media(min-width : 1254px){        /*for desktop  - large screen*/
+
 }
