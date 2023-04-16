@@ -6,10 +6,12 @@
 
 body {
     background-color: black;      /* adding background color black */
+    color:white;
 }
 
 .navbar{
     display : flex;
+    justify-content: space-around;
 }
 .navbaar_brand{
     width: 100px;
@@ -19,4 +21,10 @@ body {
 .navbaar_logo{
     width: 100%;
     height : 100%;
+}
+
+.nav-items{
+    display:flex;
+    justify-content: right;
+
 }
