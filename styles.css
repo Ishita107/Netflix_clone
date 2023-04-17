@@ -32,7 +32,7 @@ body {
 
 .hero_main_bg{     
     width:100%;
-    height : 75vh;              /* vh -- viewport height */
+    height : 80vh;              /* vh -- viewport height */
 }
 
 .hero_bg_img{   /* image occupy 100% width and height of div of class hero_main_bg */
@@ -45,8 +45,11 @@ body {
     position: absolute;
     inset: 0;
     width:100%;
-    height : 75vh;   
+    height : 80vh;   
     background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 0.8) 0,                  /* Adding Gradient */
+    rgba(0, 0, 0, 0) 60%, 
+    rgba(0, 0, 0, 0.8) 100% );
 }
 
 
@@ -88,7 +91,7 @@ option{
 
 .hero_card{
     position: absolute;
-    top:30%;
+    top:20%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -105,12 +108,15 @@ option{
     font-size: 15px;
 }
 
+.hero_des{
+    margin : 0 50px;
+}
 .email_input{                           /* removing default border and background of input  */
     border: none;
     background: transparent;
     width:100%;
     height:100%;
-    padding:13px;
+    padding:9px;
 }
 
 .email_form_container{
@@ -118,6 +124,7 @@ option{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap : 15px;
 }
 
 .email_container{
@@ -148,12 +155,22 @@ option{
 .email_input:focus-visible{
     outline: none;
 }
+/* style to get started button*/
+.primary_button{
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    border-radius: 4px ;
+    color: white;
+    padding: 15px 22px;
+    font-size: 20px;
+    letter-spacing: 1px;         /* Spacing between the words */
+}
 
 /* adding media queries*/
 
-@media(max-width : 768px){  
+@media(min-width : 535px){  
     .hero_card{
-        top:30%;
+        top:50%;
         left:50%;
         transform: translate(-50% , -50%);
      }
@@ -166,7 +183,7 @@ option{
         height:100vh;
      }
      .hero_card{
-        top:30%;
+        top:50%;
         left:50%;
         transform: translate(-50% , -50%);
      }
@@ -196,7 +213,7 @@ option{
         gap:30px;
     }
     .hero_card{
-        top:30%;
+        top:50%;
         left:50%;
         transform: translate(-50% , -50%);
      }
@@ -205,6 +222,20 @@ option{
     }
     .hero_description{
         font-size: 23px;
+    }
+
+    .email_form_container{
+        flex-direction: row;
+        align-items: center;
+        gap :0;
+    }
+
+    .email_container{
+        width:50%;
+    }
+
+    .primary_button{
+        height: 50px;
     }
 }
 
