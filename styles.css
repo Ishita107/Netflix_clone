@@ -166,6 +166,49 @@ option{
     letter-spacing: 1px;         /* Spacing between the words */
 }
 
+.feature{
+    border-top: 8px solid #222;
+    padding: 30px 15px;
+}
+.feature_details{
+    text-align: center;
+}
+
+.feature_title{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.feature_sub_title{
+    font-size: 15px;
+    font-weight: 400;
+}
+/* feature images and vedios */
+.feature_img_container{
+    width:100%;
+    position:relative;     /* position realtive to vedio */
+}
+
+.feature_img{
+    width:100%;
+}
+
+.feature_vedio_container{
+    position: absolute;
+    width:100%;
+    top:20%;
+    height:100%;
+    left:13%;
+    max-width:73%;
+    max-height:54%;
+    z-index:-2;        /* for vedio behind the image */
+}
+
+.feature_vedio{
+    width:100%;
+}
+
 /* adding media queries*/
 
 @media(min-width : 535px){  
@@ -191,6 +234,17 @@ option{
         font-size: 43px;
     }
     .hero_description{
+        font-size: 20px;
+    }
+    .feature{
+        padding: 60px;
+    }
+    
+    .feature_title{
+        font-size: 35px;
+    }
+    
+    .feature_sub_title{
         font-size: 20px;
     }
 }
@@ -236,6 +290,28 @@ option{
 
     .primary_button{
         height: 50px;
+    }
+
+    .feature{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .feature_details{
+        text-align: left;
+        padding: 0 6rem;
+    }
+
+    .feature_title{
+        font-size: 50px;
+    }
+    .feature_sub_title{
+        font-size: 25px;
+    }
+    .feature_img_container{
+        max-width: 600px;
     }
 }
 

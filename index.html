@@ -49,6 +49,7 @@
     </header>  
 
     <main>
+        <!--Adding hero-->
         <section class ="hero_main">
             <!--Div for backgroung image-->
             <div class="hero_main_bg ">
@@ -58,6 +59,7 @@
 
             <!--Div for overlay-->
             <div class ="hero_bg_overlay"></div>
+            
             <div class = "hero_card">                     <!-- adding title and para and other content on hero-->
                 <h1 class = "hero_title">
                     Unlimited movies, TV <br>shows and more. 
@@ -75,6 +77,35 @@
                 </div>
             </div>
         </section>
+        
+        <!--Adding features below hero-->
+        <section class="features__container">
+
+            <!-- Feature 1 -->
+            <div class="feature">
+              <div class="feature_details">
+                    <h3 class="feature_title">Enjoy on your TV.</h3>
+                    <h5 class="feature_sub_title">
+                        Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                        Blu-ray players and more.
+                    </h5>
+              </div>
+
+              <!-- div container for feature image-->
+              <div class = "feature_img_container">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt ="Feature image"  class = "feature_img"/>
+                
+                <!-- div inside a div for vedio-->
+                <div class="feature_vedio_container">
+                    <video autoplay="" loop="" muted="" class="feature_vedio">         <!-- for vedio -->     <!-- autoplay attribute for atomatic playing of vedio-->
+                        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4" />   <!-- source tag - self closing tag -->
+                    </video>
+                </div>
+
+              </div>
+            </div>
+        </section>
+
     </main>
     <script src = "index.js"> </script>              <!-- adding js file-->
 </body>
