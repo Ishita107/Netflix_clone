@@ -313,6 +313,10 @@ option{
     .feature_img_container{
         max-width: 600px;
     }
+
+    .feature:nth-child(even){             /* for reversing the contents at 2nd ,4th (even no.)... */
+        flex-direction: row-reverse;
+    }
 }
 
 @media(min-width : 1254px){        /*for desktop  - large screen*/
