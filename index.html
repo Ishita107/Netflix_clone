@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "styles.css">               <!-- Adding CSS  file-->
     <!-- cdn link for fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!--adding poppins font-->
@@ -45,23 +50,28 @@
 
     <main>
         <section class ="hero_main">
+            <!--Div for backgroung image-->
             <div class="hero_main_bg ">
                 <img src="https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg"
                  alt = "background-image" class="hero_bg_img" />
             </div>
+
+            <!--Div for overlay-->
             <div class ="hero_bg_overlay"></div>
-            <div class = "hero_card">                     <!-- adding title and para-->
+            <div class = "hero_card">                     <!-- adding title and para and other content on hero-->
                 <h1 class = "hero_title">
                     Unlimited movies, TV <br>shows and more. 
                 </h1>
                 <p class = "hero_description ">Watch anywhere. Cancel anytime.</p>
-                <p class = "hero_description ">Ready to watch? Enter your email to create or restart your membership. </p>
+                <p class = "hero_description hero_des">Ready to watch? Enter your email to create or restart your membership. </p>
                 
                 <div class = "email_form_container">                     <!--Adding email form and started button-->
                     <div class="email_container">                         <!-- for email input-->
                         <input class="email_input" placeholder=" ">
                         <label class = "email_label">Email Address</label>
                     </div>
+                    <!--button -- get started-->
+                    <button class="primary_button">Get Started <i class="fal fa-chevron-right"></i> </button>
                 </div>
             </div>
         </section>
