@@ -260,6 +260,15 @@ option{
     height: 100%;
 }
 
+/* adding style to feature 3 vedio */
+.feature_3_vedio_container{
+    max-width: 63;
+    max-height: 47;
+    z-index: -2;
+    top: 9%;
+    left:19%;
+}
+
 /* adding media queries*/
 
 @media(min-width : 535px){  
