@@ -315,10 +315,48 @@ option{
 }
 
 .FAQ_get_started_email > h3{
-    ont-size: 18px;
+    font-size: 18px;
     font-weight: 400;
     margin: 2rem 0;
 }
+
+/* styling footer */
+footer{
+    border-top: 8px solid #333;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_row_1 > h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.footer_row_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    color: #757575;
+}
+
+.footer_row_3 > .dropDown{
+    width: fit-content;
+    border: 1px solid #757575;
+    color: #757575;
+}
+
+.footer_row_3 > .dropDown > .language---Select {
+    color: #757575;
+} 
+
+.footer_row_4 {
+    color: #757575;
+}
+  
 /* adding media queries*/
 
 @media(min-width : 535px){  
@@ -494,6 +532,26 @@ option{
     .FAQ_get_started_email{
         transform: translateX(16%);
     }
+
+    footer {
+        padding: 2rem 25rem;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+
+      }
+    
+      .footer_row_2 {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+      }
+    
+      .footer_row_1,
+      .footer_row_3,
+      .footer_row_4 {
+        align-self: flex-start;
+      }
  
 }
 
