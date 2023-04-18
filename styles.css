@@ -270,9 +270,21 @@ option{
 }
 
 /* adding style to FAQ div */
+.FAQ_list_container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+  }
+
 .FAQ_details{                 /* FAQ div */
     width:100%;
-    margin : 20px 0;
+}
+
+.FAQ_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .FAQ_title_button{           /* FAQ button */
@@ -289,11 +301,13 @@ option{
 .FAQ_visible{
     background-color: #303030;
     border: 1px solid black;
-    padding:1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
 }
 
 .FAQ_visible > p{
-    margin: 1rem 0;
+    margin: 1rem;
 }
 /* adding media queries*/
 
@@ -361,9 +375,19 @@ option{
     .poster_details > h4 {
         font-size: 18px;
       }
-      .poster_details > h6 {
-        font-size: 14px;
+    .poster_details > h6 {
+      font-size: 14px;
+    }
+
+    .FAQ_heading {
+        font-size: 38px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-align: center;
       }
+    .FAQ_list {
+        padding: 1rem 5rem;
+    }
 }
 
 @media(min-width : 1024px){        /*for laptop*/
@@ -444,9 +468,15 @@ option{
     .poster_image{
         width:20%;
     }
+
+    .FAQ_list {
+        padding: 1rem 15rem;
+    }
  
 }
 
 @media(min-width : 1254px){        /*for desktop  - large screen*/
-
+    .FAQ_list {
+        padding: 1rem 20rem;
+    }
 }
