@@ -309,6 +309,16 @@ option{
 .FAQ_visible > p{
     margin: 1rem;
 }
+
+.FAQ_get_started_email{
+    text-align: center;
+}
+
+.FAQ_get_started_email > h3{
+    ont-size: 18px;
+    font-weight: 400;
+    margin: 2rem 0;
+}
 /* adding media queries*/
 
 @media(min-width : 535px){  
@@ -387,6 +397,14 @@ option{
       }
     .FAQ_list {
         padding: 1rem 5rem;
+    }
+
+    .FAQ_get_started_email{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(15%);
     }
 }
 
@@ -471,6 +489,10 @@ option{
 
     .FAQ_list {
         padding: 1rem 15rem;
+    }
+
+    .FAQ_get_started_email{
+        transform: translateX(16%);
     }
  
 }
